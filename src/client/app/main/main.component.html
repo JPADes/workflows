@@ -1,0 +1,72 @@
+<md-sidenav-container fullscreen class="data-root bic-default-font">
+	<md-sidenav #navigation class="resizable-sidebar" allign="start" mode="side" opened="true" disableClose="true" [ngStyle]="style">
+		<section fxLayout="column" style="height: 100%">
+			<div fxLayout="column" class="logo" (click)="gotoHome()">
+				<img src="assets/svg/bic-cloud-logo.svg" />
+			</div>
+		</section>
+
+	</md-sidenav>
+	<div class="content-container">
+		<section fxLayout="row" style="min-height:78px;">
+			<section fxFlex>
+				<md-toolbar color="primary" class="main-toolbar">
+					<button mdTooltip="{{ 'COMPONENT.COMMON.BUTTON.MENU_VISIBILITY' | translate }}" md-icon-button aria-label="Navigation">
+						<md-icon class="mat-24">menu</md-icon>
+					</button>
+					<button mdTooltip="{{ 'COMPONENT.COMMON.BUTTON.ADMIN' | translate }}"md-icon-button (click)="showAdminArea()" >
+						<md-icon class="mat-24">build</md-icon>
+					</button>
+					<button mdTooltip="{{ 'COMPONENT.COMMON.BUTTON.ABOUT' | translate }}" md-icon-button aria-label="Navigation" (click)="showInformationPannel()" >
+						<md-icon class="mat-24">help_outline</md-icon>
+					</button>
+					<span fxFlex></span>
+					<span class="display">
+						<span class="display-user">{{loggedInUser}}&nbsp;</span>
+						<span class="display-lang" (click)="changeLanguage()">{{languages}}</span>
+					</span>
+					<!--<span mdTooltip="{{displayLangTooltip}}" mdTooltipPosition="left"><span class="display-lang">{{languages}}</span></span>-->
+					<span style="width:80px;"></span>
+				</md-toolbar >
+
+				<md-toolbar class="sub-toolbar">
+					<!--<div>
+						<button md-icon-button [class.show-star-outline]="!isFavorite()" [class.hide-star-outline]="isFavorite()" 
+								(click)="addRemoveFavorite()">
+							<md-icon class="mat-24">star_outline</md-icon>
+						</button>-->
+						<!--commented out to pause the work on favorite star animation
+							BICM-3184 - pere065-->
+						<!--<button md-icon-button [class.show-rolling-star]="startAnimation()" [class.hide-rolling-star]="!startAnimation()">
+							<md-icon class="mat-24">star</md-icon>
+						</button>
+					</div>-->
+					<span class="breadcrumb">
+						{{category?.headline}}
+					</span>
+					<span fxFlex></span>
+					<button mdTooltip="{{ 'COMPONENT.COMMON.BUTTON.INFO' | translate }}" md-icon-button aria-label="Filter" (click)="sidebarToggle(0)">
+						<md-icon class="mat-24">info</md-icon> <!-- alternatives: grid, view_dashboard, view_stream, view_quilt, format_align_justify -->
+					</button>
+					<button mdTooltip="{{ 'COMPONENT.COMMON.BUTTON.FILTER' | translate }}" md-icon-button aria-label="Filter" (click)="sidebarToggle(1)">
+						<md-icon class="mat-24">filter_list</md-icon> <!-- alternatives: grid, view_dashboard, view_stream, view_quilt, format_align_justify -->
+					</button>
+					<button mdTooltip="{{ 'COMPONENT.COMMON.BUTTON.REPORTING' | translate }}" md-icon-button aria-label="Reporting" >
+						<md-icon class="mat-24" >file_download</md-icon>
+					</button>
+					<span style="width:75px;"></span>
+				</md-toolbar>
+			</section>
+		</section>
+		<button mdTooltip="{{ 'COMPONENT.COMMON.BUTTON.PROFILE' | translate }}" mdTooltipPosition="before" md-fab class="user-button" (click)="toggleUserIcons()">
+			<md-icon class="user-button-icon">person</md-icon>
+		</button>
+		<button mdTooltip="{{ 'COMPONENT.COMMON.BUTTON.LOGOUT' | translate }}" mdTooltipPosition="before" md-mini-fab class="user-logout" (click)="onLogutClick()" [@toggleUsericons]>
+			<md-icon >power_settings_new</md-icon>
+		</button>
+		<button mdTooltip="{{ 'COMPONENT.COMMON.BUTTON.SETTING' | translate }}" mdTooltipPosition="before" md-mini-fab class="user-settings" (click)="onUserProfileClick()" [@toggleUsericons]>
+			<md-icon >settings</md-icon>
+		</button>
+		<router-outlet></router-outlet>
+	</div>
+</md-sidenav-container>

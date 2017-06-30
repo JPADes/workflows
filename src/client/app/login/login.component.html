@@ -1,0 +1,38 @@
+<section class="login-container" ng-app="ngAnimate">
+  <div class="bg" [class.bg-active]="initialized">
+  </div>
+  <object class="logo" data="assets/svg/bic-cloud-logo-login.svg" type="image/svg+xml"></object>
+  <div class="navigation">
+    <a class="nav-link" href="https://it.arvato.com/de/solutions/it-solutions/enterprise-information-management/bic-platform.html" target="_blank">Home</a>
+    <span class="separator">|</span>
+    <a class="nav-link" href="https://it.arvato.com/de/solutions/it-solutions/enterprise-information-management/process-management.html" target="_blank">Training</a>
+    <span class="separator">|</span>
+    <a class="nav-link" href="https://it.arvato.com/de/ueber-arvato-systems/impressum.html" target="_blank">{{ 'COMPONENT.LOGIN.IMPRINT' | translate }}</a>
+    <span class="language-selector">
+        <a (click)="changeLanguage('de_DE')" class="nav-link">DE</a>
+        |
+        <a (click)="changeLanguage('en_GB')" class="nav-link">EN</a>
+    </span>
+  </div>
+  <div class="content" >
+    <h1>{{ 'COMPONENT.LOGIN.HEADER_1' | translate }}</h1>
+    <h2>{{ 'COMPONENT.LOGIN.HEADER_2' | translate }}</h2>
+      <div class="login-container"  [@shake]="loginFailed">
+        <div class="login-error" *ngIf="loginFailed" > 
+          {{ 'COMPONENT.LOGIN.MSG_AUTH_FAILED' | translate }}
+        </div>
+        <form class="login-form" #loginForm="ngForm" (ngSubmit)="doLogin()">
+          <input type="text" [(ngModel)]="username" name="username" placeholder="{{ 'COMPONENT.LOGIN.USERNAME' | translate }}"> 
+          <input type="password" [(ngModel)]="password" name="password" placeholder="{{ 'COMPONENT.LOGIN.PASSWORD' | translate }}">
+          <button type="submit">{{ 'COMPONENT.LOGIN.LOGIN_BUTTON' | translate }}</button>
+        </form>
+        <div class="subform">
+          <a href="mailto:{{adminMail}}?Subject:Forgot Password" class="forgot-link">{{ 'COMPONENT.LOGIN.FORGOT_PASSWORD' | translate }}</a>
+        </div>
+      </div>
+    
+  </div>
+  <a href="https://www.arvato.com/de.html" target="_blank">
+      <img class="img" src="/assets/images/arvato_weiss_1000px.png">
+    </a>
+</section>

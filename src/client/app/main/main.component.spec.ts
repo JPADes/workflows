@@ -6,17 +6,17 @@ import {
 
 import { Observable } from 'rxjs/Observable';
 
-import { HomeComponent } from './home.component';
+import { MainComponent } from './main.component';
 import { NameListService } from '../shared/name-list/name-list.service';
 
 export function main() {
-  describe('Home component', () => {
+  describe('Main component', () => {
 
     beforeEach(() => {
 
       TestBed.configureTestingModule({
         imports: [FormsModule],
-        declarations: [HomeComponent],
+        declarations: [MainComponent],
         providers: [
           { provide: NameListService, useValue: new MockNameListService() }
         ]
@@ -29,7 +29,7 @@ export function main() {
         TestBed
           .compileComponents()
           .then(() => {
-            let fixture = TestBed.createComponent(HomeComponent);
+            let fixture = TestBed.createComponent(MainComponent);
             let homeInstance = fixture.debugElement.componentInstance;
             let homeDOMEl = fixture.debugElement.nativeElement;
             let mockNameListService =

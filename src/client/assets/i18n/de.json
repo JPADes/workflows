@@ -1,0 +1,217 @@
+{
+	"COMPONENT": {
+		"COMMON": {
+			"FAVORITES": "Favoriten",
+			"CONTENT_LANG": "Inhaltssprache",
+			"UI_LANG": "Oberflächensprache",
+			"NO_DATA": "Keine Daten",
+			"RESET_ZOOM": "Zurücksetzen",
+			"BUTTON": {
+				"OK": "OK",
+				"CLOSE": "Schließen",
+				"DELETE": "Entfernen",
+				"NEW_ENTRY": "Neuer Eintrag",
+				"CANCEL": "Abbrechen",
+				"EDIT": "Bearbeiten",
+				"SAVE": "Speichern",
+				"FAVORITE": "Favoriten",
+				"LAYOUT": "Layout",
+				"OBJECT_PALATTE_VISIBILITY": "Anzeigen/Ausblenden Objekt Palette",
+				"INFO": "Informationen",
+				"FILTER": "Filter",
+				"REPORTING": "Reporting",
+				"MENU_VISIBILITY": "Anzeigen/Ausblenden Menü",
+				"ABOUT": "Über",
+				"PROFILE": "Profil",
+				"LOGOUT": "Abmelden",
+				"SETTING": "Einstellungen",
+				"DONE": "Erledigt",
+				"ADMIN" : "Administrationsbereich",
+				"DATA" : "Datenbereich",
+				"REFRESH" : "Aktualisieren"
+			},
+			"TITLE": {
+				"MAIN": "BIC Cloud Monitor",
+				"USER_PROFILE": "Mein Profil",
+				"ADMIN": "Administration"
+			}
+		},
+		"LOGIN": {
+			"IMPRINT": "Impressum",
+			"HEADER_1": "BIC Cloud - New dimensions in BPM",
+			"HEADER_2": "Simple. Smart. Cloud.",
+			"LOGIN_BUTTON": "Anmelden",
+			"USERNAME": "Benutzername",
+			"PASSWORD": "Passwort",
+			"MSG_AUTH_FAILED": "Login fehlgeschlagen. Überprüfen Sie Ihre Angaben und versuchen es erneut!",
+			"FORGOT_PASSWORD": "Passwort vergessen?"
+		},
+		"CATEGORY": {
+			"NEW": "Neue Kategorie",
+			"NAVIGATION": {
+				"SEARCH": "Suche",
+				"RENAME": "Umbenennen",
+				"NEW": "Neu",
+				"DELETE": "Entfernen"
+			},
+			"LOCK": {
+				"NOTIFICATION_MSG_1": "ist gesperrt durch",
+				"NOTIFICATION_MSG_2": "seit"
+			},
+			"DIALOG": {
+				"BUTTON": {
+					"YES": "Ja",
+					"NO": "Nein",
+					"CANCEL": "Abbrechen",
+					"SAVE": "Speichern",
+					"CONFIRM": "Bestätigen",
+					"OK": "Ok"
+				},
+				"PLACEHOLDER": {
+					"CATEGORY_NAME": "Kategoriename"
+				},
+				"CATEGORY_LEAVE": {
+					"DIALOG_MESSAGE": "Nicht gespeicherte Änderungen gehen verloren. Änderungen verwerfen?"
+				},
+				"CATEGORY_EDIT": {
+					"TITLE": "Geben Sie bitte den Namen der Kategorie ein"
+				},
+				"CATEGORY_DELETE": {
+					"TITLE": "Die Kategorie wird unwiderruflich gelöscht!"
+				},
+				"GENERAL_INFO": {
+					"DUPLICATE_FILTER_ELEMENT": "Doppelter Eintrag"
+				}
+			},
+			"SNACKBAR_MSG": {
+				"CANCEL_CHANGES": "Änderungen wurden verworfen.",
+				"SAVE_CHANGES": "Änderungen wurden erfolgreich gespeichert.",
+				"ADD": " wurde erfolgreich hinzugefügt.",
+				"DELETE": " wurde erfolgreich gelöscht."
+			}
+		},
+		"USER_DIALOG": {
+			"HEADER": "Mein Profil",
+			"PASSWORD_TAB": "Passwort",
+			"EMAIL_TAB": "E-Mail",
+			"TELEPHONE_TAB": "Telefon",
+			"ADDRESS_TAB": "Adresse",
+			"ADDRESS": {
+				"HEADER": "Neue Adresse hinzufügen",
+				"TYPE": "Typ",
+				"STREET": "Straße",
+				"STREET_NO": "Hausnummer",
+				"ZIP_CODE": "Postleitzahl",
+				"CITY": "Stadt",
+				"COUNTRY": "Land",
+				"ADDITIONS": "Zusatz",
+				"NEW_SUCCESS_TEXT": "Neue Adresse wurde erfolgreich hinzugefügt!",
+				"NEW_FAILED_TEXT": "Hinzufügen von neuer Adresse fehlgeschlagen!",
+				"EDIT_SUCCESS_TEXT": "Adresse erfolgreich geändert!",
+				"EDIT_FAILED_TEXT": "Adresse konnte nicht geändert werden!",
+				"DELETE_CONFIRM_TEXT": "Sind Sie sicher, dass Sie dieses Feld löschen wollen?",
+				"DELETE_SUCCESS_TEXT": "Adresse wurde erfolgreich gelöscht!",
+				"DELETE_FAILED_TEXT": "Adresse konnte nicht gelöscht werden!"
+			},
+			"DROPZONE": {
+				"DROPZONE_TEXT": "Ziehen Sie die Datei hier rein oder klicken Sie hier für einen neuen Avatar!",
+				"FILE_TOO_BIG_TEXT": "Maximale Dateigröße: 48KiB. Hochgeladene Datei ist zu groß.",
+				"INVALID_FILE_TYPE_TEXT": "Dieser Dateityp wird nicht unterstützt."
+			},
+			"EMAIL": {
+				"HEADER": "E-Mail Adresse hinzufügen",
+				"TYPE": "Typ",
+				"EMAIL": "E-Mail",
+				"WARNING_TEXT": "Bitte geben Sie eine gültige E-Mail Adresse ein. Z.B. name@domain.de",
+				"NEW_SUCCESS_TEXT": "Neue E-Mail Adresse wurde erstellt!",
+				"NEW_FAILED_TEXT": "E-Mail Adresse konnte nicht hinzugefügt werden!",
+				"EDIT_SUCCESS_TEXT": "E-Mail Adresse wurde erfolgreich geändert!",
+				"EDIT_FAILED_TEXT": "E-Mail Adresse konnte nicht geändert werden!",
+				"DELETE_CONFIRM_TEXT": "Wollen Sie dieses Feld wirklich löschen?",
+				"DELETE_SUCCESS_TEXT": "E-Mail Adresse wurde erfolgreich gelöscht!",
+				"DELETE_FAILED_TEXT": "E-Mail Adresse konnte nicht gelöscht werden!"
+			},
+			"GENERAL": {
+				"SALUTATION": "Anrede",
+				"TITLE": "Titel",
+				"NAME": "Vorname",
+				"SURNAME": "Name",
+				"COMPANY": "Firma",
+				"SUCCESS_TEXT": "Profil erfolgreich geändert!",
+				"FAILED_TEXT": "Profil konnte nicht geändert werden!"
+			},
+			"PASSWORD": {
+				"CURRENT": "Aktuelles Passwort",
+				"NEW": "Neues Passwort",
+				"CONFIRM": "Neues Passwort bestätigen",
+				"WARNING_TEXT": "Die Passwörter stimmen nicht überein.",
+				"SUCCESS_TEXT": "Passwort wurde erfolgreich geändert!",
+				"FAILED_TEXT": "Passwort konnte nicht geändert werden!"
+			},
+			"PHONE": {
+				"HEADER": "Telefonnummer hinzufügen",
+				"TYPE": "Typ",
+				"COUNTRY_CODE": "Ländercode",
+				"AREA_CODE": "Vorwahl",
+				"LOCAL_ACCESS": "Nebenstellennummer",
+				"EXTENSION": "Durchwahl",
+				"PHONENUMBER": "Telefonnummer",
+				"NEW_SUCCESS_TEXT": "Telefonnummer erfolgreich gespeichert!",
+				"NEW_FAILED_TEXT": "Telefonnummer konnte nicht gespeichert werden!",
+				"EDIT_SUCCESS_TEXT": "Telefonnummer wurde erfolgreich geändert!",
+				"EDIT_FAILED_TEXT": "Telefonnummer konnte nicht geändert werden!",
+				"DELETE_CONFIRM_TEXT": "Wollen Sie dieses Objekt wirklich löschen?",
+				"DELETE_SUCCESS_TEXT": "Telefonnummer erfolgreich gelöscht!",
+				"DELETE_FAILED_TEXT": "Telefonnummer konnte nicht gelöscht werden!"
+			}
+		},
+		"TABLE": {
+			"SEARCH": "Suche",
+			"CHART": "Diagramm",
+			"CLEAR_ALL_SEARCH": "Alles löschen",
+			"COPIED": "Kopiert!",
+			"EMPTY": "Keine Daten",
+			"TOTAL": "insgesamt"
+		},
+		"OBJECT-PALETTE": {
+			"TABLE": "Tabelle",
+			"CHART": "Diagramm",
+			"MONITOR": "Monitor",
+			"DOWNLOAD": "Download",
+			"TEXT_AND_GRAPHIC": "Text und Grafik"
+		},
+		"INFO-PANNEL": {
+			"VERSION": "Version",
+			"COPYRIGHT": "Alle Rechte vorbehalten bei",
+			"DOWNLOAD": "Laden Sie hier den Schnelleinstieg herunter",
+			"BUILD": "Build",
+			"BUTTON": "OK"
+		},
+		"OBJECT-HEADER-CONTEXT-MENU": {
+			"INFO": "Info",
+			"FILTER": "Filter",
+			"SETTING": "Einstellungen",
+			"REPORT-PDF": "PDF Report",
+			"REPORT-PPT": "PPT Report",
+			"REPORT-XLS": "XLS Report"
+		},
+		"SIDEBAR": {
+			"AUTO_RELOAD": "Aktualisierung",
+			"DATEPICKER": {
+				"HOUR": "h",
+				"MINUTE": "m",
+				"SECOND": "s"
+			}
+			},
+		"FILTER-ELEMENT-PALETTE": {
+			"DATE": "Datum",
+			"COMBOBOX": "Combobox",
+			"CHECKBOX": "Checkbox",
+			"RADIOBUTTON": "Radiobutton",
+			"INPUT": "Freitext",
+			"NUMBERFIELD": "Nummernfeld",
+			"BUTTON": "Button",
+			"GROUP": "Gruppe"
+		}
+	}
+}

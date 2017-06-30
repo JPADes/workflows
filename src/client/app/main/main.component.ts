@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { trigger, state, style, transition, animate, group } from '@angular/animations';
 import { NameListService } from '../shared/name-list/name-list.service';
 
 /**
@@ -6,11 +7,37 @@ import { NameListService } from '../shared/name-list/name-list.service';
  */
 @Component({
   moduleId: module.id,
-  selector: 'sd-home',
-  templateUrl: 'home.component.html',
-  styleUrls: ['home.component.css'],
+  selector: 'app-main',
+  templateUrl: 'main.component.html',
+  styleUrls: ['main.component.css'],
+  animations: [
+    trigger('toggleUsericons', [
+      state('void', style({ opacity: 0, transform: 'translateY(0)' })),
+      transition('void => *', [
+        style({ transform: 'translateY(-20px)', opacity: 0 }),
+        group([
+          animate('0.3s 0.1s ease', style({
+            transform: 'translateY(0)'
+          })),
+          animate('0.3s ease', style({
+            opacity: 1
+          }))
+        ])
+      ]),
+      transition('* => void', [
+        group([
+          animate('0.3s ease', style({
+            transform: 'translateY(-20px)'
+          })),
+          animate('0.3s 0.2s ease', style({
+            opacity: 0
+          }))
+        ])
+      ])
+    ])
+  ]
 })
-export class HomeComponent implements OnInit {
+export class MainComponent implements OnInit {
 
   newName: string = '';
   errorMessage: string;

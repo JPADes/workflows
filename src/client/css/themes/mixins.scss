@@ -1,0 +1,71 @@
+@import '../../../../node_modules/@angular/material/theming.scss';
+
+@mixin navigation-theme($theme,$border-color) {
+    // Extract whichever individual palettes you need from the theme.
+    $primary: map-get($theme, primary);
+    $accent: map-get($theme, accent);
+
+    // Use mat-color to extract individual colors from a palette as necessary.
+    // .candy-carousel {
+    //     background-color: mat-color($primary);
+    //     border-color: mat-color($accent, A400);
+    // }
+
+    // icon
+    md-sidenav {
+        border-right: 1px solid $border-color;
+
+        & > div {
+            border-bottom: 1px solid $border-color;
+        }
+    }
+
+    category-navigation > md-nav-list {
+
+        & > section {
+            border-bottom: 1px solid $border-color;
+
+            .category-tree-item {
+                cursor: pointer;
+            }
+
+            .category-tree-item-selected {
+                background-color:  mat-color($accent); //#D9D9D9;
+            }
+
+            .category-tree-item:hover {
+                cursor: pointer;
+                background-color: #E6E6E6;
+            }
+        }
+
+        .navigation-root-item.mat-list-item{
+            border-bottom: 1px solid $border-color;
+        }
+
+        .navigation-root-item-expand.mat-list-item {
+            background-color: mat-color($primary);
+            color: white;
+            & > md-icon {
+                color: white;
+            }
+        }
+
+        .favorite-item:hover {
+            cursor: pointer;
+            background-color: #E6E6E6;
+        }
+
+        .favorite-item-selected {
+            background-color: mat-color($accent);//#D9D9D9;
+        }
+    }
+
+    //object-palette
+    div.object-palette {
+
+        .object-palette-item:hover {
+            background-color: #E6E6E6;
+        }
+    }
+}

@@ -7,9 +7,10 @@ import './operators';
  */
 @Component({
   moduleId: module.id,
-  selector: 'sd-app',
-  templateUrl: 'app.component.html',
-  styleUrls: ['app.component.css'],
+  selector: 'app-bicce',
+  template: `<div style="height:100%">
+                  <router-outlet></router-outlet>
+               </div>`
 })
 export class AppComponent {
   constructor() {

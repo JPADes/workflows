@@ -1,0 +1,217 @@
+{
+	"COMPONENT": {
+		"COMMON": {
+			"FAVORITES": "Favorites",
+			"CONTENT_LANG": "Content Language",
+			"UI_LANG": "UI Language",
+			"NO_DATA": "No data",
+			"RESET_ZOOM": "Reset Zoom",
+			"BUTTON": {
+				"OK": "Ok",
+				"CLOSE": "Close",
+				"DELETE": "Delete",
+				"NEW_ENTRY": "New Entry",
+				"CANCEL": "Cancel",
+				"EDIT": "Edit",
+				"SAVE": "Save",
+				"FAVORITE": "Favorite",
+				"LAYOUT": "Layout",
+				"OBJECT_PALATTE_VISIBILITY": "Show/Hide Object Pallete",
+				"INFO": "Info",
+				"FILTER": "Filter",
+				"REPORTING": "Reporting",
+				"MENU_VISIBILITY": "Show/Hide Menu",
+				"ABOUT": "About",
+				"PROFILE": "Profile",
+				"LOGOUT": "Logout",
+				"SETTING": "Setting",
+				"DONE": "Done",
+				"ADMIN" : "Admin Area",
+				"DATA" : "Data Area",
+				"REFRESH" : "Refresh"
+			},
+			"TITLE": {
+				"MAIN": "BIC Cloud Monitor",
+				"USER_PROFILE": "My Profile",
+				"ADMIN": "Administration"
+			}
+		},
+		"LOGIN": {
+			"IMPRINT": "Imprint",
+			"HEADER_1": "BIC Cloud - New dimensions in BPM",
+			"HEADER_2": "Simple. Smart. Cloud.",
+			"LOGIN_BUTTON": "Login",
+			"USERNAME": "Username",
+			"PASSWORD": "Password",
+			"MSG_AUTH_FAILED": "Login failed! Recheck your credentials and try again!",
+			"FORGOT_PASSWORD": "Forgot your password?"
+		},
+		"CATEGORY": {
+			"NEW": "New Category",
+			"NAVIGATION": {
+				"SEARCH": "Search",
+				"RENAME": "Rename",
+				"NEW": "New",
+				"DELETE": "Delete"
+			},
+			"LOCK": {
+				"NOTIFICATION_MSG_1": "is locked by",
+				"NOTIFICATION_MSG_2": "since"
+			},
+			"DIALOG": {
+				"BUTTON": {
+					"YES": "Yes",
+					"NO": "No",
+					"CANCEL": "Cancel",
+					"SAVE": "Save",
+					"CONFIRM": "Confirm",
+					"OK": "Ok"
+				},
+				"PLACEHOLDER": {
+					"CATEGORY_NAME": "Category Name"
+				},
+				"CATEGORY_LEAVE": {
+					"DIALOG_MESSAGE": "Your changes will be lost if you don't save. Discard changes?"
+				},
+				"CATEGORY_EDIT": {
+					"TITLE": "Please enter the name of the Category"
+				},
+				"CATEGORY_DELETE": {
+					"TITLE": "The category will be irretrievably deleted!"
+				},
+				"GENERAL_INFO": {
+					"DUPLICATE_FILTER_ELEMENT": "Filter Element already exist!"
+				}
+			},
+			"SNACKBAR_MSG": {
+				"CANCEL_CHANGES": "Changes are discarded.",
+				"SAVE_CHANGES": "Changes have been successfully saved.",
+				"ADD": " was successfully added.",
+				"DELETE": " was successfully deleted."
+			}
+		},
+		"USER_DIALOG": {
+			"HEADER": "My Profile",
+			"PASSWORD_TAB": "Password",
+			"EMAIL_TAB": "Email",
+			"TELEPHONE_TAB": "Telephone",
+			"ADDRESS_TAB": "Address",
+			"ADDRESS": {
+				"HEADER": "Create New Address",
+				"TYPE": "Type",
+				"STREET": "Street",
+				"STREET_NO": "Street No.",
+				"ZIP_CODE": "Zip Code",
+				"CITY": "City",
+				"COUNTRY": "Country",
+				"ADDITIONS": "Additions",
+				"NEW_SUCCESS_TEXT": "New address is successfully added!",
+				"NEW_FAILED_TEXT": "Failed to add new address!",
+				"EDIT_SUCCESS_TEXT": "Successful updated address",
+				"EDIT_FAILED_TEXT": "Failed to update address!",
+				"DELETE_CONFIRM_TEXT": "Are you sure you want to delete this item?",
+				"DELETE_SUCCESS_TEXT": "Successful deleted address",
+				"DELETE_FAILED_TEXT": "Failed to deleted address!"
+			},
+			"DROPZONE": {
+				"DROPZONE_TEXT": "Drop file here or click to upload new avatar",
+				"FILE_TOO_BIG_TEXT": "Max filesize: 48KiB. Uploaded file is too big.",
+				"INVALID_FILE_TYPE_TEXT": "You can't upload files of this type."
+			},
+			"EMAIL": {
+				"HEADER": "Create New E-mail Address",
+				"TYPE": "Type",
+				"EMAIL": "Email",
+				"WARNING_TEXT": "Please enter a valid email address. For example fred@domain.com.",
+				"NEW_SUCCESS_TEXT": "New email is successfully added!",
+				"NEW_FAILED_TEXT": "Failed to add new email!",
+				"EDIT_SUCCESS_TEXT": "Successful updated email",
+				"EDIT_FAILED_TEXT": "Failed to update email!",
+				"DELETE_CONFIRM_TEXT": "Are you sure you want to delete this item?",
+				"DELETE_SUCCESS_TEXT": "Successful deleted email",
+				"DELETE_FAILED_TEXT": "Failed to deleted email!"
+			},
+			"GENERAL": {
+				"SALUTATION": "Salutation",
+				"TITLE": "Title",
+				"NAME": "Name",
+				"SURNAME": "Surname",
+				"COMPANY": "Company",
+				"SUCCESS_TEXT": "Update Profile successful!",
+				"FAILED_TEXT": "Update Profile failed!"
+			},
+			"PASSWORD": {
+				"CURRENT": "Current Password",
+				"NEW": "New Password",
+				"CONFIRM": "Confirm New Password",
+				"WARNING_TEXT": "New Password and Current New Password are not the same.",
+				"SUCCESS_TEXT": "Update Password successful!",
+				"FAILED_TEXT": "Update Password failed!"
+			},
+			"PHONE": {
+				"HEADER": "Add New Phone",
+				"TYPE": "Type",
+				"COUNTRY_CODE": "Country Code",
+				"AREA_CODE": "Area Code",
+				"LOCAL_ACCESS": "Local Access",
+				"EXTENSION": "Extension",
+				"PHONENUMBER": "Phonenumber",
+				"NEW_SUCCESS_TEXT": "New phone is successfully added!",
+				"NEW_FAILED_TEXT": "Failed to add new phone!",
+				"EDIT_SUCCESS_TEXT": "Successful updated phone",
+				"EDIT_FAILED_TEXT": "Failed to update phone!",
+				"DELETE_CONFIRM_TEXT": "Are you sure you want to delete this item?",
+				"DELETE_SUCCESS_TEXT": "Successful deleted phone",
+				"DELETE_FAILED_TEXT": "Failed to deleted phone!"
+			}
+		},
+		"TABLE": {
+			"SEARCH": "Search",
+			"CHART": "Chart",
+			"CLEAR_ALL_SEARCH": "Clear All",
+			"COPIED": "Copied!",
+			"EMPTY": "No data",
+			"TOTAL": "total"
+		},
+		"OBJECT-PALETTE": {
+			"TABLE": "Table",
+			"CHART": "Chart",
+			"MONITOR": "Monitor",
+			"DOWNLOAD": "Download",
+			"TEXT_AND_GRAPHIC": "Text & Graphic"
+		},
+		"INFO-PANNEL": {
+			"VERSION": "Version",
+			"COPYRIGHT": "All rights reserved by",
+			"DOWNLOAD": "Download the quickstart guide here",
+			"BUILD": "Build",
+			"BUTTON": "OK"
+		},
+		"OBJECT-HEADER-CONTEXT-MENU": {
+			"INFO": "Info",
+			"FILTER": "Filter",
+			"SETTING": "Setting",
+			"REPORT-PDF": "PDF Report",
+			"REPORT-PPT": "PPT Report",
+			"REPORT-XLS": "XLS Report"
+		},
+		"SIDEBAR": {
+			"AUTO_RELOAD": "Auto Reload",
+			"DATEPICKER": {
+				"HOUR": "h",
+				"MINUTE": "m",
+				"SECOND": "s"
+			}
+		},
+		"FILTER-ELEMENT-PALETTE": {
+			"DATE": "Date",
+			"COMBOBOX": "Combobox",
+			"CHECKBOX": "Checkbox",
+			"RADIOBUTTON": "Radiobutton",
+			"INPUT": "Input",
+			"NUMBERFIELD": "Numberfield",
+			"BUTTON": "Button",
+			"GROUP": "Group"
+		}
+	}
+}

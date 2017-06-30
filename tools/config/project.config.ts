@@ -1,7 +1,7 @@
 import { join } from 'path';
 
 import { SeedConfig } from './seed.config';
-// import { ExtendPackages } from './seed.config.interfaces';
+import { ExtendPackages } from './seed.config.interfaces';
 
 /**
  * This class extends the basic seed configuration, allowing for project specific overrides. A few examples can be found
@@ -13,7 +13,8 @@ export class ProjectConfig extends SeedConfig {
 
   constructor() {
     super();
-    // this.APP_TITLE = 'Put name of your app here';
+    this.APP_TITLE = 'BIC Cloud Execution';
+    this.ENABLE_SCSS = true;
     // this.GOOGLE_ANALYTICS_ID = 'Your site's ID';
 
     /* Enable typeless compiler runs (faster) between typed compiler runs. */
@@ -43,13 +44,22 @@ export class ProjectConfig extends SeedConfig {
     ];
 
     // Add packages (e.g. ng2-translate)
-    // let additionalPackages: ExtendPackages[] = [{
-    //   name: 'ng2-translate',
-    //   // Path to the package's bundle
-    //   path: 'node_modules/ng2-translate/bundles/ng2-translate.umd.js'
-    // }];
-    //
-    // this.addPackagesBundles(additionalPackages);
+    let additionalPackages: ExtendPackages[] = [
+      {
+        name:'@angular/material',
+        path:'node_modules/@angular/material/bundles/material.umd.js'
+      },
+      {
+        name:'@angular/flex-layout',
+        path:'node_modules/@angular/flex-layout/bundles/flex-layout.umd.js'
+      },
+      {
+        name:'ng2-translate',
+        path:'node_modules/ng2-translate/bundles/ng2-translate.umd.js'
+      },
+    ];
+
+    this.addPackagesBundles(additionalPackages);
 
     /* Add proxy middleware */
     // this.PROXY_MIDDLEWARE = [
